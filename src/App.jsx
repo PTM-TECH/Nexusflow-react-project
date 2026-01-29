@@ -1,16 +1,18 @@
 import { useState } from "react";
-import Home from "./components/Homepage/index";
-import Dashboard from "./components/Dashboard/index";
-import LogInSignUp from "./components/LogIn/index";
-import Subscription from "./components/Subscription/index";
+import Navbar from "./components/NavBar/Navbar";
+import Herosection from "./components/HeroSection/Herosection";
+import Services from "./components/OurServices/Services";
+import About from "./components/AboutUs/About";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
-    <div>
-      <Home />
-      <Dashboard />
-      <LogInSignUp />
-      <Subscription />
+    <div className="bg-gray-50 w-full">
+      <Navbar />
+      <Herosection />
+      <Services />
+      <About />
+      <Footer />
     </div>
   );
 }
